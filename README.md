@@ -1,16 +1,53 @@
-# React + Vite
+## Reto Técnico Frontend
+-----------------------------------------------------------------
+## Tecnologías utilizadas: 
+-React, Vite, React Router DOM, JavaScript, CSS, PokéAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Instrucciones para ejecutar el proyecto:
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/LucianaMendozaT/reto-tecnico-app.git
+```
+2. Ingresar a la carpeta del proyecto:
+```bash
+cd reto-tecnico-app
+```
+3. Instalar dependencias:
+```bash
+npm install 
+```
+4. Ejecutar el proyecto:
+```bash
+npm run dev
+```
+5. Abrir en el navegador:
+```url
+http://localhost:5173
+```
 
-Currently, two official plugins are available:
+## Estructura del proyecto
+```
+src/api/pokemonApi.js
+src/components/ErrorMessage.jsx
+src/components/Loader.jsx
+src/components/Navbar.jsx
+src/components/PokemonCard.jsx
+src/hooks/useFavorites.js
+src/pages/Detalle.jsx
+src/pages/Favoritos.jsx
+src/pages/Inicio.jsx
+src/routes/ AppRouter.jsx
+src/styles/main.css
+src/App.jsx
+src/main.jsx
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Decisiones tomadas
+Para el desarrollo utilice React Router DOM para la navegación entre páginas y se organizó los archivos por responsabilidades para mantener el proyecto más ordenado.
 
-## React Compiler
+El llamado a las APIS fueron separadas en una carpeta específica para facilitar el mantenimiento del código. También se creó un hook personalizado para manejar la lógica de favoritos y el almacenamiento local.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Decidí utilizar CSS puro para mantener la aplicación sencilla y evitar dependencias adicionales.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Autora
+Luciana Andrea Mendoza Torres
